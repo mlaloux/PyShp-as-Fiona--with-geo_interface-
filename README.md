@@ -4,7 +4,7 @@ PyShp as Fiona (with geo_interface)
 PyShp as Fiona (with geo_interface)
 
 
-The great advantage of Fiona (Sean Gillies) is its ability to quickly examine the contents of a shapefile as dictionaries or write a shapefile in the same way, thanks to  iterators:
+One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickly examine the contents of a shapefile as dictionaries or write a shapefile in the same way, thanks to  iterators:
 
     import fiona   
     f = fiona.open('point.shp')  
@@ -17,7 +17,7 @@ The great advantage of Fiona (Sean Gillies) is its ability to quickly examine th
 
 
 
-but now, with the __geo_interface__ for shapes of Christian Lederman, it is possible to do the same thing with Pyshp:
+but now, with the __geo_interface__ for shapes of Christian Lederman, it is possible to do the same thing with **Pyshp**:
 
     def records(filename):  
     # iterator  
@@ -53,7 +53,7 @@ with polygons shapefile:
     c.next()
     {'geometry': {'type': 'Polygon', 'coordinates': (((166500.64206965509, 114695.34460173383), (166480.3066551598, 114693.60541532337), (166468.3914291781, 114692.18187126353), (166464.39182593071, 114692.26803581366),(166500.64206965509, 114695.34460173383)),)}, 'properties': {'CLASSE': 'VAR', 'FORM': 'X','VAR_FORM': 'NEFA', 'SYMBOL': 65}}
     
-with shapely (like with pygeoif of Christian Lederman):
+with **shapely** (like with **pygeoif** of Christian Lederman):
 
     from shapely.geometry import shape    
     a = records('point.shp') 
