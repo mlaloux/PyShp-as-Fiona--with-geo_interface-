@@ -24,7 +24,7 @@ One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickl
     55  
 
 
-And in **Pyshp**, it is now possible to do the same (reading only for the moment) with a simple generator/iterator:
+And it is now possible to do the same in **Pyshp** (reading only for the moment) with a simple generator/iterator:
 
     def records(filename):  
         # generator 
