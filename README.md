@@ -1,8 +1,18 @@
 PyShp as Fiona (with geo_interface)
 ===================================
 
+The  __geo_interface__ protocol was  describeb by Sean Gillies https://gist.github.com/2217756 and used by
 
-One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickly examine the contents of a shapefile as dictionaries or write a shapefile in the same way, thanks to  iterators:
+* Shapely https://github.com/Toblerity/Shapely
+* Fiona  https://github.com/Toblerity/Fiona
+* descartes https://bitbucket.org/sgillies/descartes/
+* geojson http://pypi.python.org/pypi/geojson/
+* pygeoif https://github.com/cleder/pygeoif
+* ArcPy http://resources.arcgis.com/en/help/main/10.1/index.html#//018v0000004m000000
+
+and now in **Pyshp** thanks to Christian Lederman (https://github.com/cleder/pyshp)  
+
+One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickly examine the contents of a shapefile as dictionaries or write a shapefile in the same way, thanks to the protocol and iterators:
 
     >>> import fiona   
     >>> f = fiona.open('point.shp')  
@@ -14,11 +24,10 @@ One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickl
     55  
 
 
-
-but now, with the __geo_interface__ for shapes of Christian Lederman, it is possible to do the same thing with **Pyshp**:
+And it is now possible to do the same as Fiona with a generator/iterator:
 
     def records(filename):  
-        # iterator  
+        # generator 
         reader = shapefile.Reader(filename)  
         fields = reader.fields[1:]  
         field_names = [field[0] for field in fields]  
