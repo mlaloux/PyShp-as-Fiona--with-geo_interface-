@@ -1,8 +1,6 @@
 PyShp as Fiona (with geo_interface)
 ===================================
 
-PyShp as Fiona (with geo_interface)
-
 
 One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickly examine the contents of a shapefile as dictionaries or write a shapefile in the same way, thanks to  iterators:
 
