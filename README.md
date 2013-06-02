@@ -1,14 +1,14 @@
 PyShp as Fiona (with geo_interface)
 ===================================
 
-The  __geo_interface__ protocol was  describeb by Sean Gillies https://gist.github.com/2217756 and used by
+The  __geo_interface__ protocol was  describeb by Sean Gillies (https://gist.github.com/2217756) and used by
 
-* Shapely https://github.com/Toblerity/Shapely
-* Fiona  https://github.com/Toblerity/Fiona
-* descartes https://bitbucket.org/sgillies/descartes/
-* geojson http://pypi.python.org/pypi/geojson/
-* pygeoif https://github.com/cleder/pygeoif
-* ArcPy http://resources.arcgis.com/en/help/main/10.1/index.html#//018v0000004m000000
+* **Shapely** https://github.com/Toblerity/Shapely
+* **Fiona**  https://github.com/Toblerity/Fiona
+* **descartes** https://bitbucket.org/sgillies/descartes/
+* **geojson** https://github.com/sgillies/geojson
+* **pygeoif** https://github.com/cleder/pygeoif
+* **ArcPy** http://resources.arcgis.com/en/help/main/10.1/index.html#//018v0000004m000000
 
 and now in **Pyshp** thanks to Christian Lederman (https://github.com/cleder/pyshp)  
 
