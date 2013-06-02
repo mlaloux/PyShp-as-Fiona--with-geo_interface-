@@ -20,14 +20,14 @@ One of the great advantages of **Fiona** (Sean Gillies) is its ability to quickl
 but now, with the __geo_interface__ for shapes of Christian Lederman, it is possible to do the same thing with **Pyshp**:
 
     def records(filename):  
-    # iterator  
-    reader = shapefile.Reader(filename)  
-    fields = reader.fields[1:]  
-    field_names = [field[0] for field in fields]  
-    for sr in reader.shapeRecords():  
-        geom = sr.shape.__geo_interface__  
-        atr = dict(zip(field_names, sr.record))  
-        yield dict(geometry=geom,properties=atr)    
+        # iterator  
+        reader = shapefile.Reader(filename)  
+        fields = reader.fields[1:]  
+        field_names = [field[0] for field in fields]  
+        for sr in reader.shapeRecords():  
+            geom = sr.shape.__geo_interface__  
+            atr = dict(zip(field_names, sr.record))  
+            yield dict(geometry=geom,properties=atr)    
         
 with points shapefile: 
 
