@@ -9,6 +9,7 @@ The __geo_interface__ (GeoJSON-like) protocol was describeb by Sean Gillies (htt
 * **geojson** https://github.com/sgillies/geojson
 * **pygeoif** https://github.com/cleder/pygeoif
 * **ArcPy** http://resources.arcgis.com/en/help/main/10.1/index.html#//018v0000004m000000
+* **QGIS** with the new API: geom.exportToGeoJSON()
 
 and now in **Pyshp** ( Joel Lawhead) thanks to Christian Lederman (https://github.com/cleder/pyshp)  
 
